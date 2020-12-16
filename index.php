@@ -8,11 +8,15 @@
     $name = "Bui Van Ha";
     $age = 19;
 
-    $arrayValue['keyframe'] = "something";
+    $product['car'] = "BWM";
+    $product['tree'] = 'violet';
+    $product['pen'] = 'penchi';
 
     echo "<h1>Welcome to ".$name."!</h1>";
     echo "<h2>I am ".$age." years old</h2>";
-    echo "<h3>I can do ".$arrayValue['keyframe']."</h3>"
+    foreach ($product as $item => $value) {
+        echo "<h3>".$item." is a ".$value."</h3>";
+    }
 ?>
 </body>
 </html>
